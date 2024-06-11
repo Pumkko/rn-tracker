@@ -1,4 +1,6 @@
 ---
+import Link from '../components/Link.astro';
+
 interface Props {
 	title: string;
 }
@@ -17,6 +19,10 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
+		<div>
+			<Link title='votes' route='/votes'/>
+			<Link title='condamnations' route='/' />
+		</div>
 		<slot />
 	</body>
 </html>
