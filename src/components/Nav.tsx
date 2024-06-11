@@ -1,9 +1,7 @@
 import {
     NavigationMenu,
     NavigationMenuItem,
-    NavigationMenuLink,
-    NavigationMenuList,
-    navigationMenuTriggerStyle
+    NavigationMenuList
 } from "@/components/ui/navigation-menu"
 
 
@@ -13,16 +11,12 @@ export function NavigationMenuDemo() {
             <NavigationMenuList>
                 <NavigationMenuItem>
                     <a href="/">
-                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                            Condamnations
-                        </NavigationMenuLink>
+                        Condamnations
                     </a>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                     <a href="/votes">
-                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                            Votes
-                        </NavigationMenuLink>
+                        Votes
                     </a>
                 </NavigationMenuItem>
             </NavigationMenuList>
