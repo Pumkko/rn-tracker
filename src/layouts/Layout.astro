@@ -1,5 +1,6 @@
 ---
-import Link from '../components/Link.astro';
+import Navbar from '../components/Navbar.astro';
+
 
 interface Props {
 	title: string;
@@ -19,10 +20,8 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<div>
-			<Link title='votes' route='/votes'/>
-			<Link title='condamnations' route='/' />
-		</div>
+		<Navbar/>
+
 		<slot />
 	</body>
 </html>
