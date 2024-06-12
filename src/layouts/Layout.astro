@@ -1,5 +1,5 @@
 ---
-import { NavigationMenuDemo } from "@/components/Nav";
+import { NavigationMenu } from "@/components/Nav";
 import "@/styles/globals.css";
 
 interface Props {
@@ -19,9 +19,11 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="bg-background">
-		<nav class="flex justify-center">
-			<NavigationMenuDemo client:load />
+	<body>
+		<nav
+			class="flex justify-center gap-4 p-5 sticky top-0 shadow-md bg-primary text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+		>
+			<NavigationMenu client:load />
 		</nav>
 
 		<div class="p-5">

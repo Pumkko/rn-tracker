@@ -26,6 +26,8 @@
     --input: 201 30% 50%;
     --ring: 201 72.2% 31%;
     --radius: 1rem;
+    --title: 198 21% 39%;
+    --title-foreground: 197 33% 81%;
   }
 
   .dark {
@@ -49,6 +51,8 @@
     --input: 201 30% 50%;
     --ring: 201 72.2% 31%;
     --radius: 1rem;
+    --title: 197 33% 81%;
+    --title-foreground: 198 21% 39%;
   }
 
 

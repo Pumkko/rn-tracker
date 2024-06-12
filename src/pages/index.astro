@@ -1,13 +1,12 @@
 ---
+import PageTitle from "@/components/PageTitle.astro";
 import CandidateCard from "@/components/cards/CandidateCard.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<h1 class="text-3xl font-bold underline text-primary">
-			Les Affaires du RN
-		</h1>
+		<PageTitle title="Le RN et la Justice" />
 
 		<div
 			class="flex flex-wrap gap-16 justify-center sm:justify-normal mt-5"
