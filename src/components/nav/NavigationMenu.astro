@@ -4,6 +4,8 @@ import NavigationMenuLink from "./NavigationMenuLink.astro";
 const currentRoute = new URL(Astro.request.url).pathname;
 ---
 
+{currentRoute}
+
 <NavigationMenuLink
     targetRoute="/"
     currentRoute={currentRoute}
@@ -11,7 +13,7 @@ const currentRoute = new URL(Astro.request.url).pathname;
 />
 
 <NavigationMenuLink
-    targetRoute="/votes"
+    targetRoute="/votes/"
     currentRoute={currentRoute}
     title="Votes"
 />
