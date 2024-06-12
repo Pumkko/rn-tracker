@@ -1,0 +1,13 @@
+---
+interface Props {
+    targetRoute: string;
+    currentRoute: string;
+    title: string;
+}
+
+const { targetRoute, currentRoute, title } = Astro.props;
+---
+
+<a href={targetRoute} class={targetRoute === currentRoute ? "underline" : ""}>
+    {title}
+</a>

@@ -1,0 +1,17 @@
+---
+import NavigationMenuLink from "./NavigationMenuLink.astro";
+
+const currentRoute = new URL(Astro.request.url).pathname;
+---
+
+<NavigationMenuLink
+    targetRoute="/"
+    currentRoute={currentRoute}
+    title="Condamnations"
+/>
+
+<NavigationMenuLink
+    targetRoute="/votes"
+    currentRoute={currentRoute}
+    title="Votes"
+/>
