@@ -13,7 +13,7 @@ const Cases: JusticeCase[] = [
                 sourceUrl: "https://www.francetvinfo.fr/politique/front-national/affaire-des-assistants-du-fn-au-parlement-europeen-marine-le-pen-et-une-vingtaine-d-autres-personnes-renvoyees-en-correctionnel-pour-detournement-de-fonds-publics_6230829.html"
             }
         ],
-        state: "OnGoing"
+        state: "En Cours"
     }
 ]
 

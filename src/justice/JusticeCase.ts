@@ -1,7 +1,7 @@
 import type { JusticeCaseSource } from "./JusticeCaseSource";
 
 export type JusticeCase = {
-    state: 'OnGoing' | 'Convicted',
+    state: 'En Cours' | 'Condamné',
     description: string;
     source: JusticeCaseSource[]
 }
