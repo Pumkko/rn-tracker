@@ -1,7 +1,9 @@
 ---
-import PageTitle from "@/components/PageTitle.astro";
-import CandidateCard from "@/components/cards/CandidateCard.astro";
+import PageTitle from "@/common/PageTitle.astro";
+import JusticeCases from "@/justice/components/JusticeCases";
 import Layout from "../layouts/Layout.astro";
+
+import Cases from "@/justice/Cases";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -11,13 +13,7 @@ import Layout from "../layouts/Layout.astro";
 		<div
 			class="flex flex-wrap gap-16 justify-center sm:justify-normal mt-5"
 		>
-			<CandidateCard />
-			<CandidateCard />
-			<CandidateCard />
-			<CandidateCard />
-			<CandidateCard />
-			<CandidateCard />
-			<CandidateCard />
+			<JusticeCases cases={Cases} />
 		</div>
-	</main>
-</Layout>
+	</main></Layout
+>
