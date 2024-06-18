@@ -2,7 +2,7 @@ import type { JusticeCase } from "./JusticeCase";
 
 const Cases: JusticeCase[] = [
     {
-        name: `Affaire des assistants du FN au parlement européen`
+        name: `Affaire des assistants du FN au parlement européen`,
         description: `Conformément aux réquisitions du parquet de la juridiction
         interrégionale spécialisée financière du parquet de Paris, 28 personnes
         sont renvoyées devant la juridiction de jugement, parmi lesquelles le
