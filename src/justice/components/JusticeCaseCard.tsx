@@ -11,7 +11,7 @@ export default function JusticeCaseCard({ justiceCase }: JusticeCaseCardProps) {
     return (
         <div className="border-2 rounded-lg w-4/5 sm:w-1/6 p-2">
             <div className="text-primary flex justify-center border-b-2">{justiceCase.state}</div>
-            <div className="flex border-b-2">
+            <div className="flex justify-between border-b-2">
             <div className="text-primary left">{justiceCase.name}</div>
             <div className="text-primary right">{justiceCase.date}</div></div>
             <div className="my-2">
