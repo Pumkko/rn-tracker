@@ -16,9 +16,6 @@ export default function RessourceLinkCard({ ressourceLink }: RessourceLinkCardPr
                     <a className="text-primary underline" target="_blank" href={ressourceLink.sourceUrl}
                     >{ressourceLink.name}</a>
                 }
-                {
-                    <img src={ressourceLink.imageUrl}/>
-                    }
             </div>
 
         </div>);
