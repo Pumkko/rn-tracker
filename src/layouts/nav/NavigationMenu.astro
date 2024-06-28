@@ -15,3 +15,9 @@ const currentRoute = new URL(Astro.request.url).pathname;
     currentRoute={currentRoute}
     title="Votes"
 />
+
+<NavigationMenuLink
+    targetRoute="/liens/"
+    currentRoute={currentRoute}
+    title="Liens"
+/>
