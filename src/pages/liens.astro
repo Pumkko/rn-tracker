@@ -1,0 +1,20 @@
+---
+import PageTitle from "@/common/PageTitle.astro";
+import Layout from "../layouts/Layout.astro";
+import RessourceLinks from "@/link/components/RessourceLink";
+
+import Links from "@/link/Links";
+---
+
+<Layout title="Welcome to Liens.">
+	<main>
+		<PageTitle title="Liens utiles" />
+
+		<div
+        class="flex flex-wrap gap-16 justify-center sm:justify-normal mt-5"
+    >
+        <RessourceLinks links={Links} />
+    </div>
+
+	</main></Layout>
+
