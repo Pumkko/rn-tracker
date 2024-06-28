@@ -1,4 +1,4 @@
 
 export type RessourceLink = {
-  name: string; sourceUrl: string;
+  name: string; sourceUrl: string; imageUrl: string
 }
