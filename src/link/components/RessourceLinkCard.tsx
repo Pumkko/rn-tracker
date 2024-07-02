@@ -1,3 +1,4 @@
+import { XEmbed, TikTokEmbed, YouTubeEmbed   } from 'react-social-media-embed';
 import type { RessourceLink } from "../RessourceLink";
 
 type RessourceLinkCardProps = {
@@ -17,9 +18,34 @@ export default function RessourceLinkCard({ ressourceLink }: RessourceLinkCardPr
                     >{ressourceLink.name}</a>
                 }
                 {
-                    <img src={ressourceLink.imageUrl}/>
-                    }
+                    ressourceLink.imageUrl !== '' ?
+                        <img src={ressourceLink.imageUrl} />
+                    :   ''
+                }
+                {
+                    ressourceLink.tweetUrl !== '' ?
+                        <div>
+                            <XEmbed url={ressourceLink.tweetUrl}/>
+                        </div>
+                    : ''
+                }
+                {
+                    ressourceLink.tiktokUrl !== '' ?
+                        <div >
+                            <TikTokEmbed url={ressourceLink.tiktokUrl}  />
+                        </div>
+                    : ''
+                }
+                {
+                    ressourceLink.youtubeUrl !== '' ?
+                        <div>
+                             <YouTubeEmbed url={ressourceLink.youtubeUrl}/>
+                        </div>
+                    : ''
+                }
             </div>
+            
 
+        
         </div>);
 }
