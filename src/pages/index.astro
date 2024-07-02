@@ -10,10 +10,9 @@ import Cases from "@/justice/Cases";
 	<main>
 		<PageTitle title="Le RN et la Justice" />
 
-		<div
-			class="flex flex-wrap gap-16 justify-center sm:justify-normal mt-5"
-		>
-			<JusticeCases cases={Cases} />
+		<div class="flex flex-wrap gap-16 justify-center sm:justify-normal mt-5">
+			<JusticeCases cases={Cases.sort((a, b) => (a.date < b.date) ? 1 : -1)} />
 		</div>
+
 	</main></Layout
 >
