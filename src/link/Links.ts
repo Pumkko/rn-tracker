@@ -39,6 +39,15 @@ const Links: RessourceLink[] =
       },
       {
 
+        name: 'Réactions internationales au premier tour des législatives',
+        sourceUrl: 'https://x.com/CartesDuMonde/status/1807806741444223209',
+        imageUrl: '',
+        tweetUrl: 'https://x.com/CartesDuMonde/status/1807806741444223209',
+        tiktokUrl: '',
+        youtubeUrl: ''
+      },
+      {
+
         name: 'La réalité sur les votes RN ',
         sourceUrl:
             'https://www.tiktok.com/@malopedia/video/7381626694530108704',
